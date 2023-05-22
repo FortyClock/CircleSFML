@@ -1,0 +1,4 @@
+﻿  Drunk.cpp
+C:\Users\parkh\source\repos\Drunk\Drunk\Drunk.cpp(96,31): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\parkh\source\repos\Drunk\Drunk\Drunk.cpp(96,28): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+  Drunk.vcxproj -> C:\Users\parkh\source\repos\Drunk\x64\Debug\Drunk.exe
