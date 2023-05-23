@@ -22,7 +22,7 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
 
-            switch (event.key.code)
+            switch (event.key.code)      // change the color: R - red; B - blue; G - green
             {
             case sf::Keyboard::G:
                 circle.setFillColor(sf::Color::Green);
@@ -36,7 +36,7 @@ int main()
                 circle.setFillColor(sf::Color::Red);
                 break;
 
-            case sf::Keyboard::Up:
+            case sf::Keyboard::Up:       // increase the size
                 
                 if ((x + radius + dr   < sizeX && x - radius + dr > 0
                     && y + radius + dr < sizeY && y - radius + dr > 0))
@@ -47,7 +47,7 @@ int main()
 
                 break;
 
-            case sf::Keyboard::Down:
+            case sf::Keyboard::Down:     // decrease the size
                 if (radius >= 10)
                 {
                     radius -= dr;
@@ -55,27 +55,27 @@ int main()
                 }
                 break;
 
-            case sf::Keyboard::Numpad6:  // увеличить скорость по Х
+            case sf::Keyboard::Numpad6:  // increase X-axis speed 
 
                 dx += 0.01;
                 break;
 
-            case sf::Keyboard::Numpad4:  // уменьшить скорость по Х
+            case sf::Keyboard::Numpad4:  // decrease X-axis speed
 
                 dx -= 0.01;
                 break;
 
-            case sf::Keyboard::Numpad8:  // увеличить скорость Y
+            case sf::Keyboard::Numpad8:  // increase Y-axis speed
 
                 dy -= 0.01;
                 break;
 
-            case sf::Keyboard::Numpad2:  // уменьшить скорость Y
+            case sf::Keyboard::Numpad2:  // decrease Y-axis speed
 
                 dy += 0.01;
                 break;
 
-            case sf::Keyboard::Space:
+            case sf::Keyboard::Space:    // stop the circle
                 dx = 0;
                 dy = 0;
                 break;
